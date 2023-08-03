@@ -1,8 +1,8 @@
-import { useParams } from "react-router";
-import { Container } from "../Components/Container";
-import { Layout } from "../Components/Layout";
-import { useStorage } from "../hooks/useStorage";
-import { CodeSnippetDetail } from "../Components/CodeSnippetDetail";
+import { useParams } from 'react-router';
+import { Container } from '../Components/Container';
+import { Layout } from '../Components/Layout';
+import { useStorage } from '../hooks/useStorage';
+import { CodeSnippetDetail } from '../Components/CodeSnippetDetail';
 
 export const SnippetDetail = () => {
   const { id } = useParams();
@@ -15,8 +15,8 @@ export const SnippetDetail = () => {
         {snippet ? (
           <CodeSnippetDetail {...snippet} />
         ) : (
-          <div className="flex justify-center py-12">
-            <span className="text-2xl">Wrong id</span>
+          <div className='flex justify-center py-12'>
+            <span className='text-2xl'>Wrong id</span>
           </div>
         )}
       </Container>

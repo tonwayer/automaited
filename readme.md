@@ -6,12 +6,16 @@ Node v18.10.0 or higher version
 ## Setup
 
 
-Install decencies
+Install dependencies
 ```Bash
 yarn install
 ```
 
-Run we webapp
+Run webapp
 ```Bash
 yarn start
 ```
+
+Run electron app
+```Bash
+yarn elecctron:start

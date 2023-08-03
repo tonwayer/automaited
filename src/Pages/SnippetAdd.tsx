@@ -1,10 +1,10 @@
-import { CodeSnippetForm } from "../Components/CodeSnippetForm";
-import { Container } from "../Components/Container";
-import { Layout } from "../Components/Layout";
-import { useStorage } from "../hooks/useStorage";
-import { useCallback } from "react";
-import { CodeSnippet } from "../interfaces";
-import { useNavigate } from "react-router-dom";
+import { CodeSnippetForm } from '../Components/CodeSnippetForm';
+import { Container } from '../Components/Container';
+import { Layout } from '../Components/Layout';
+import { useStorage } from '../hooks/useStorage';
+import { useCallback } from 'react';
+import { CodeSnippet } from '../interfaces';
+import { useNavigate } from 'react-router-dom';
 
 export const SnippetAdd = () => {
   const { addSnippet } = useStorage();
@@ -12,7 +12,7 @@ export const SnippetAdd = () => {
 
   const handleSubmit = useCallback((values: CodeSnippet) => {
     addSnippet(values);
-    navigate('/')
+    navigate('/');
   }, []);
 
   return (
